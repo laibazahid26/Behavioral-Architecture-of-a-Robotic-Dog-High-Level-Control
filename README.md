@@ -3,6 +3,7 @@
 Introduction: 
 
 In this assignment we implemented and simulated three behaviors of MIRO Robot. Those three behaviors are:
+
     • Normal 
     • Sleep  
     • Play  
