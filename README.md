@@ -33,7 +33,7 @@ The audio is fed to the ROS node “Speech Processor”. After processing and ma
 
 Below is the state diagram of this architecture. This finite state machine lies inside the command manager node of my architecture.
 
- ![alt text](https://github.com/laibazahid26/exp_rob_assignment_1/blob/main/finite%20state%20machine.png?raw=true)
+ ![alt text](https://github.com/laibazahid26/exp_rob_assignment_1/blob/master/finite%20state%20machine.png?raw=true)
 
 As can be seen, there are three states, i.e. Normal, Sleep and, Play. The robot comes to life in being in the Normal state. Since we were required to ‘decide’ upon when the robot goes to sleep, I decided that  whenever the robot finishes the normal behavior ‘and’ there is no speech command, then the robot goes to the Sleep behavior. I also decided that the robot will come out of the Sleep behavior when it finishes its sleeping time, i.e. after finishing sleep time, the robot goes back to the Normal state. 
 
