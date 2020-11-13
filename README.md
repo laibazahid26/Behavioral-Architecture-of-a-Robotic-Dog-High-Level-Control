@@ -14,7 +14,7 @@ These three behaviors were implemented inside a finite state machine which was b
 
 Below is the image of my architecture. 
 
-![alt text](https://github.com/laibazahid26/exp_rob_assignment_1/blob/main/architecture.png?raw=true)
+![alt text](https://github.com/laibazahid26/exp_rob_assignment_1/blob/master/architecture.png?raw=true)
 
 
 The audio is fed to the ROS node “Speech Processor”. After processing and making sure that the audio provided does correspond to the ‘play’ command, we set the ‘playflag’ to 1 inside the ROS Parameter Server. This ‘playflag’ is then used by the finite state machine, which lies inside the “Command Manager” node, to jump to the ‘Play’ behavior. Notice that “Rigid Body Detector” node takes data from the camera. The camera detects the human arm posture and to find the coordinates of that arm posture, gives the data do “Gesture Processor” node.  The “Gesture Processor” node then passes a vector to “The Command Manager” node. The vector contains the estimated x and y coordinates of the point to which the user’s hand is pointing to.  The “Command Manger” node then finally gives the target to the “Path Planner” node and the “Path Planner” node after knowing the current position of the robot and the target, publishes a complete trajectory which the robot needs to follow. Finally, the “Robot Controller” node generates velocity commands one by one to reach to each vector.  
