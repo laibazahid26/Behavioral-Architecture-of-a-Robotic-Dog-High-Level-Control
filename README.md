@@ -1,6 +1,6 @@
 # exp_rob_assignment_1
 
-###### Introduction: 
+### Introduction: 
 
 In this assignment we implemented and simulated three behaviors of MIRO Robot. Those three behaviors are:
 
@@ -10,7 +10,7 @@ In this assignment we implemented and simulated three behaviors of MIRO Robot. T
 
 These three behaviors were implemented inside a finite state machine which was built using ROS library called SMACH. This node is named as assignment.py file. Apart from this node, one more node is built which is called as SpeakInteraction.cpp and this node simulates the speak interaction of the user with the robot. 
 
-###### Software Architecture:
+### Software Architecture:
 
 Below is the image of my architecture. 
 
