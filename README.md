@@ -79,15 +79,7 @@ I think, another way of doing this in a more modular and scalable way could be t
 
 ### Authors and Contacts:
 
-I collaborated with a fellow colleague during designing the architecture of this robot and then we also collaborated in coding for that architecture. We initially came up with two architectures but then discarded one architecture because of a lot of technical limitations in it. The biggest limitation in that architecture was that in its Normal Behavior, the program continuously prompted the user with statement ‘Do you want to play with me?’. And then when the user inputs ‘no’, the robot would then would go to some desired coordinate. After having reached that coordinate it would prompt the user again with the same question. This is how, the whole Normal behavior was taking place. We considered this as a big limitation and discarded that architecture. 
-
-The commenting with doxygen, readme file and making the github repository was done individually.  
-In any case, I will mention the names and contacts of both of us. 
-
-Author 1: Laiba Zahid (S4853477)					email ID: laibazahid26@gmail.com
-
-Author 2: Syed Muhammad Raza Rizvi (S4853521)				email ID: smrazarizvi96@gmail.com
- 
+Author 1: Laiba Zahid (S4853477)					email ID: laibazahid26@gmail.com 
 
 
   
