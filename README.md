@@ -79,7 +79,11 @@ I think, another way of doing this in a more modular and scalable way could be t
 
 ### Authors and Contacts:
 
-Author 1: Laiba Zahid (S4853477)					email ID: laibazahid26@gmail.com 
+I collaborated with a fellow colleague for doing this assignment. Only the writing of readme file and making the github repository was done individually.  
+Below I mention the names and contacts of both of us. 
+
+Author 1: Laiba Zahid (S4853477)					email ID: laibazahid26@gmail.com
+Author 2: Syed Muhammad Raza Rizvi (S4853521)		email ID: smrazarizvi96@gmail.com
 
 
   
