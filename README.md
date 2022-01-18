@@ -48,11 +48,11 @@ I created a package named smach_tutorial. Inside smach_tutorial lie two folders 
 * Go in your workspace using terminal and then do a catkin_make.
 * In the previous step you were in your workspace. Now move to the src foder of your smach_tutorial package and give running permissions to it by writing the following command:
 
- `chmod +x assignment.py`
+  `chmod +x assignment.py`
 
 * Now, we are in the position to run the assignment completely. We can do it by launching the .launch file by running the following command on the terminal. 
 
- `roslaunch smach_tutorial smachlaunch.launch` 
+   `roslaunch smach_tutorial smachlaunch.launch` 
 
 After running the above command, you will see a total of two terminals opened. The first terminal shows the complete simulation of the robot. Whereas, the second terminal simulates the speak behavior.  The user has the liberty to type ‘play’ anytime in that terminal. This writing of play in the second terminal let’s the robot go into Play behavior and then input the x and y coordinate (the gesture of the human) in the first terminal. 
 
