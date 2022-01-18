@@ -1,12 +1,11 @@
-# exp_rob_assignment_1
 
 ### Introduction: 
 
 In this assignment we implemented and simulated three behaviors of MIRO Robot. Those three behaviors are:
 
-    • Normal 
-    • Sleep  
-    • Play  
+* Normal 
+* Sleep  
+* Play  
 
 These three behaviors were implemented inside a finite state machine which was built using ROS library called SMACH. This node is named as assignment.py file. Apart from this node, one more node is built which is called as SpeakInteraction.cpp and this node simulates the speak interaction of the user with the robot. 
 
@@ -21,13 +20,13 @@ The audio is fed to the ROS node “Speech Processor”. After processing and ma
 
 ### List of messages of the proposed Architecture:
 
-    1) The Speech Processor node produces a single string, which in our case should be ‘play’. If it’s some other string then nothing happens. 
-    2) ROS Paramter Server sets the playflag, that is playflag is set to 1, if the ‘play’ command was given, otherwise this flag stays 0.
-    3) The Rigid Body Detector node provides the position of the hand in the scenario.  
-    4) The Gesture Processor Node gives the estimated x and y coordinates of the point to which the user’s hand is pointing to, which means this message is a 2D vector.
-    5) The Command Manager node gives a target which is the final location of the robot and this target is a 2D vector.
-    6) Path planner node provides a vector of vector. Which means it contains all the 2D points which the robot needs to follow to reach to the final destination. 
-    7) Robot Controller node will generate velocity commands to reach to each vector and it will have type Twist. 
+1) The Speech Processor node produces a single string, which in our case should be ‘play’. If it’s some other string then nothing happens. 
+2) ROS Paramter Server sets the playflag, that is playflag is set to 1, if the ‘play’ command was given, otherwise this flag stays 0.
+3) The Rigid Body Detector node provides the position of the hand in the scenario.  
+4) The Gesture Processor Node gives the estimated x and y coordinates of the point to which the user’s hand is pointing to, which means this message is a 2D vector.
+5) The Command Manager node gives a target which is the final location of the robot and this target is a 2D vector.
+6) Path planner node provides a vector of vector. Which means it contains all the 2D points which the robot needs to follow to reach to the final destination. 
+7) Robot Controller node will generate velocity commands to reach to each vector and it will have type Twist. 
 
 ### State Diagram:
 
@@ -44,13 +43,16 @@ I created a package named smach_tutorial. Inside smach_tutorial lie two folders 
 
 ### Installation and Running Procedure:
 
-    • Download the folder named smach_tutorial. 
-    • Place this folder inside your workspace. 
-    • Go in your workspace using terminal and then do a catkin_make.
-    • In the previous step you were in your workspace. Now move to the src foder of your smach_tutorial package and give running permissions to it by writing the following command:
-                                  chmod +x assignment.py
-    • Now, we are in the position to run the assignment completely. We can do it by launching the .launch file by running the following command on the terminal. 
-		              roslaunch smach_tutorial smachlaunch.launch 
+* Download the folder named smach_tutorial. 
+* Place this folder inside your workspace. 
+* Go in your workspace using terminal and then do a catkin_make.
+* In the previous step you were in your workspace. Now move to the src foder of your smach_tutorial package and give running permissions to it by writing the following command:
+
+chmod +x assignment.py
+
+* Now, we are in the position to run the assignment completely. We can do it by launching the .launch file by running the following command on the terminal. 
+
+roslaunch smach_tutorial smachlaunch.launch 
 
 After running the above command, you will see a total of two terminals opened. The first terminal shows the complete simulation of the robot. Whereas, the second terminal simulates the speak behavior.  The user has the liberty to type ‘play’ anytime in that terminal. This writing of play in the second terminal let’s the robot go into Play behavior and then input the x and y coordinate (the gesture of the human) in the first terminal. 
 
@@ -66,10 +68,10 @@ SpeakInteraction.cpp node allows the user to input ‘play’ anytime and then t
 
 ### System’s limitations:
 
-    1. If the robot has gone into the sleep behavior and at exactly that point the play command is given, the robot first finishes the complete Sleep time and only then the Play behavior will be implemented. 
-    2. There is no way to come out of the Play behavior unless the Play behavior finishes. Only after finishing the Play behavior the robot goes back to the Normal behavior. 
-    3. The time to reach from point A to B is same point A to C. Irrespective of the two different distances. Waiting time is same because it is set only at the launch file. 
-    4. Error handling is not done in the system.
+1. If the robot has gone into the sleep behavior and at exactly that point the play command is given, the robot first finishes the complete Sleep time and only then the Play behavior will be implemented. 
+2. There is no way to come out of the Play behavior unless the Play behavior finishes. Only after finishing the Play behavior the robot goes back to the Normal behavior. 
+3. The time to reach from point A to B is same point A to C. Irrespective of the two different distances. Waiting time is same because it is set only at the launch file. 
+4. Error handling is not done in the system.
 
 ### Possible technical Improvements:
 
@@ -82,8 +84,11 @@ I think, another way of doing this in a more modular and scalable way could be t
 I collaborated with a fellow colleague for doing this assignment. Only the writing of readme file and making the github repository was done individually.  
 Below I mention the names and contacts of both of us. 
 
-Author 1: Laiba Zahid (S4853477)					email ID: laibazahid26@gmail.com
-Author 2: Syed Muhammad Raza Rizvi (S4853521)		email ID: smrazarizvi96@gmail.com
+Author 1: Laiba Zahid (S4853477)
+email ID: laibazahid26@gmail.com
+
+Author 2: Syed Muhammad Raza Rizvi (S4853521)
+email ID: smrazarizvi96@gmail.com
 
 
   
